@@ -1,0 +1,669 @@
+🔄 **HTML Edit Mode** - Processing your edit request...
+
+ Would you like me to modify any of these sections:
+
+1. Brand name change:
+
+```diff
+<<<<<<< SEARCH
+<title>Your Jewelry Brand - Premium Shopify Theme</title>
+=======
+<title>Your Custom Brand Name - Premium Shopify Theme</title>
+>>>>>>> REPLACE
+```
+
+```
+
+
+```diff
+<<<<<<< SEARCH
+            <a href="#" class="text-2xl font-bold gold-text">YOURBRAND</a>
+=======
+            <a href="#" class="text-2xl font-bold gold-text">CUSTOMBRAND</a>
+>>>>>>> REPLACE
+
+```
+```
+
+2. Hero section modification:
+
+```diff
+<<<<<<< SEARCH
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Your Unique Tagline</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Customize this text to describe your jewelry brand's unique selling points</p>
+=======
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Luxury Jewelry For Every Occasion</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Handcrafted pieces using ethically sourced diamonds and precious metals</p>
+>>>>>>> REPLACE
+
+```
+```
+
+3. Color scheme update:
+
+```diff
+<<<<<<< SEARCH
+            --primary: #yourcolorcode; /* Main brand color */
+=======
+            --primary: #c8a97e; /* Gold tone color */
+>>>>>>> REPLACE
+```
+
+```
+
+4. Category images update:
+
+```diff
+<<<<<<< SEARCH
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8c15daa8-b6fb-462e-8c38-61b1cd881d5e.png" alt="Collection of gold and diamond rings in various styles" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+=======
+                    <img src="https://example.com/your-custom-rings-image.jpg" alt="Luxury diamond rings collection" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+>>>>>>> REPLACE
+```
+
+
+
+Which section would you like me to modify first? Or would you prefer different changes? I can provide more SEARCH/REPLACE blocks based on your edits.Here is the updated HTML content after applying above edits:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Custom Brand Name - Premium Shopify Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for Jewelry Theme */
+        :root {
+            --primary: #c8a97e; /* Gold tone color */
+            --secondary: #333;          /* Secondary color */
+            --accent: #f8f8f8;          /* Background accent */
+        }
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #fefefe;
+            color: #333;
+        }
+        
+        .gold-text {
+            color: var(--primary);
+        }
+        
+        .gold-border {
+            border-color: var(--primary);
+        }
+        
+        .btn-gold {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .btn-gold:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/74a2b9c5-75ff-4c35-8db6-6e6290f661f1.png') center/cover no-repeat;
+            min-height: 70vh;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255,255,255,0.9);
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .cart-count {
+            top: -10px;
+            right: -10px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gold-text">CUSTOMBRAND</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:gold-text">Home</a>
+                <div class="dropdown relative">
+                    <button class="hover:gold-text flex items-center">
+                        Shop <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg rounded-md mt-2 py-2 w-48">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rings</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Necklaces</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bracelets</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earrings</a>
+                    </div>
+                </div>
+                <a href="#" class="hover:gold-text">Collections</a>
+                <a href="#" class="hover:gold-text">About</a>
+                <a href="#" class="hover:gold-text">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:gold-text"><i class="fas fa-search"></i></a>
+                <a href="#" class="hover:gold-text"><i class="fas fa-user"></i></a>
+                <a href="#" class="hover:gold-text relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count absolute bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                </a>
+                <button class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-white py-2 px-4 shadow-lg hidden">
+            <a href="#" class="block py-2">Home</a>
+            <a href="#" class="block py-2">Shop</a>
+            <a href="#" class="block py-2">Collections</a>
+            <a href="#" class="block py-2">About</a>
+            <a href="#" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section flex items-center justify-center text-white mt-16">
+        <div class="text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Luxury Jewelry For Every Occasion</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Handcrafted pieces using ethically sourced diamonds and precious metals</p>
+            <a href="#" class="btn-gold px-8 py-3 inline-block rounded-md font-medium">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#" class="category-card group">
+                <div class="aspect-square overflow-hidden rounded-lg">
+                    <img src="https://example.com/your-custom-rings-image.jpg" alt="Luxury diamond rings collection" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                </div>
+                <h3 class="text-center mt-3 font-medium">Rings</h3>
+            </a>
+            <a href="#" class="category-card group">
+                <div class="aspect-square overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa69e532-e8d5-4e3e-a3ed-eee5974a103d.png" alt="Elegant necklaces with precious stones on velvet display" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                </div>
+                <h3 class="text-center mt-3 font-medium">Necklaces</h3>
+            </a>
+            <a href="#" class="category-card group">
+                <div class="aspect-square overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0027e43f-353a-4c0b-85e6-49d8fca20f68.png" alt="Variety of bracelets including bangles, chains and charm bracelets" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                </div>
+                <h3 class="text-center mt-3 font-medium">Bracelets</h3>
+            </a>
+            <a href="#" class="category-card group">
+                <div class="aspect-square overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/606fa06b-cdd3-4b91-88c1-aa1f372b52a7.png" alt="Selection of earrings including studs, hoops and dangling designs" class="w-full h-full object-cover group-hover:scale-105 transition duration-500"/>
+                </div>
+                <h3 class="text-center mt-3 font-medium">Earrings</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Featured Products</h2>
+                <a href="#" class="gold-text underline">View All</a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm pb-4">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/56fb86f9-6f5d-499c-8225-776707ae6f45.png" alt="Diamond eternity ring with princess cut stones in white gold setting" class="w-full aspect-square object-cover"/>
+                        <div class="absolute top-4 right-4 flex flex-col space-y-2">
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium">Your Product Name</h3>
+                        <div class="flex items-center mt-1 mb-2">
+                            <div class="flex gold-text">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(#reviews)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">$PRICE.00</span>
+                            <button class="btn-gold px-4 py-2 rounded-md text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm pb-4">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6a7048ae-0cd9-4de8-9784-1891dc458880.png" alt="Pearl pendant necklace with diamond accents on gold chain" class="w-full aspect-square object-cover"/>
+                        <div class="absolute top-4 right-4 flex flex-col space-y-2">
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium">Pearl Pendant Necklace</h3>
+                        <div class="flex items-center mt-1 mb-2">
+                            <div class="flex gold-text">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(42)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">$799.00</span>
+                            <button class="btn-gold px-4 py-2 rounded-md text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm pb-4">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1bde36c0-8132-420f-afa9-a5bd7e853563.png" alt="Stackable diamond bracelets with alternating gold and rose gold links" class="w-full aspect-square object-cover"/>
+                        <div class="absolute top-4 right-4 flex flex-col space-y-2">
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium">Stackable Diamond Bracelet</h3>
+                        <div class="flex items-center mt-1 mb-2">
+                            <div class="flex gold-text">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(18)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">$899.00</span>
+                            <button class="btn-gold px-4 py-2 rounded-md text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm pb-4">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18e1c450-b8ba-4561-b302-08f72bd3bc54.png" alt="Emerald cut diamond stud earrings in platinum setting" class="w-full aspect-square object-cover"/>
+                        <div class="absolute top-4 right-4 flex flex-col space-y-2">
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white shadow flex items-center justify-center">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-medium">Diamond Stud Earrings</h3>
+                        <div class="flex items-center mt-1 mb-2">
+                            <div class="flex gold-text">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(36)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">$1,499.00</span>
+                            <button class="btn-gold px-4 py-2 rounded-md text-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="bg-gray-900 text-white rounded-lg overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-8 md:p-12 flex items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 gold-text">Summer Collection</h2>
+                    <p class="mb-6 text-gray-300">Discover our exclusive summer jewelry collection inspired by Mediterranean beaches and golden sunsets.</p>
+                    <a href="#" class="btn-gold px-6 py-3 rounded-md inline-block">Explore Collection</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2da5cb13-729a-4cc5-9439-5960b519876e.png" alt="Summer jewelry collection featuring sea-inspired pieces with turquoise stones and gold details" class="w-full h-full object-cover"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="py-16 container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Follow Us @YourBrandHandle</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9f37724a-5962-4df4-a74f-e5d8de122a3b.png" alt="Customer wearing our signature ring with city skyline background" class="w-full aspect-square object-cover"/></a>
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bb25eb72-30ac-477e-810f-de7f42b1a3dc.png" alt="Behind-the-scenes look at jewelry craftsmanship" class="w-full aspect-square object-cover"/></a>
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/68735c39-bac4-471e-9a2a-484b216fbe43.png" alt="Jewelry flat lay styling with magazine aesthetic" class="w-full aspect-square object-cover"/></a>
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/65af583f-73e7-4c71-b14f-7dc90d39e623.png" alt="Wedding photo featuring our bridal collection" class="w-full aspect-square object-cover"/></a>
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d9d4bea1-b685-4a34-9140-c8c9bfbeb627.png" alt="New collection preview with emerald pieces" class="w-full aspect-square object-cover"/></a>
+            <a href="#"><img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cc53e538-e699-4af0-bccc-8498931faf10.png" alt="Customer testimonials photography session" class="w-full aspect-square object-cover"/></a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex gold-text mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="mb-4 italic">"The craftsmanship is exceptional. My necklace gets compliments every time I wear it. Worth every penny!"</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a8feeab-9be7-48c2-a977-267087be7c10.png" alt="Portrait of Sarah J., satisfied customer" class="w-10 h-10 rounded-full object-cover mr-3"/>
+                        <div>
+                            <h4 class="font-medium">Sarah J.</h4>
+                            <p class="text-sm text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex gold-text mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="mb-4 italic">"I ordered custom wedding rings and the team was fantastic throughout the entire process. The result was perfect!"</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/48ed8192-0e47-41f0-ae89-98e660b44db4.png" alt="Portrait of Michael T., happy groom" class="w-10 h-10 rounded-full object-cover mr-3"/>
+                        <div>
+                            <h4 class="font-medium">Michael T.</h4>
+                            <p class="text-sm text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex gold-text mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="mb-4 italic">"Fast shipping and beautiful packaging. The earrings were even more stunning in person than in the photos."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/81e495ea-29e0-44c5-be62-4c93ed94927d.png" alt="Portrait of Emily R., frequent customer" class="w-10 h-10 rounded-full object-cover mr-3"/>
+                        <div>
+                            <h4 class="font-medium">Emily R.</h4>
+                            <p class="text-sm text-gray-500">Verified Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">Join Our Community</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, jewelry care tips, and early access to new collections.</p>
+            <form class="max-w-lg mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-md text-black focus:outline-none"/>
+                <button type="submit" class="btn-gold px-6 py-3 rounded-r-md">Subscribe</button>
+            </form>
+            <p class="text-sm text-gray-400 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gold-text">LUXE Jewelry</h3>
+                    <p class="mb-4">Crafting timeless jewelry pieces since 1985. Each piece tells a story.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:gold-text">New Arrivals</a></li>
+                        <li><a href="#" class="hover:gold-text">Best Sellers</a></li>
+                        <li><a href="#" class="hover:gold-text">Sale Items</a></li>
+                        <li><a href="#" class="hover:gold-text">Gift Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:gold-text">Contact Us</a></li>
+                        <li><a href="#" class="hover:gold-text">FAQs</a></li>
+                        <li><a href="#" class="hover:gold-text">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:gold-text">Jewelry Care</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">About Us</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:gold-text">Our Story</a></li>
+                        <li><a href="#" class="hover:gold-text">Sustainability</a></li>
+                        <li><a href="#" class="hover:gold-text">Press</a></li>
+                        <li><a href="#" class="hover:gold-text">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500 mb-4 md:mb-0">© 2023 LUXE Jewelry. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/da8aa45e-6a78-4c7c-8a54-75e2dbfae660.png" alt="Visa payment method" class="h-6"/>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/891cc1fb-e2ed-4156-a5b7-659027032447.png" alt="Mastercard payment method" class="h-6"/>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88cb3bb6-3ff8-4a1b-aef3-8e4ff59c7585.png" alt="American Express payment method" class="h-6"/>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a4380970-592f-472d-8122-f67ec296244e.png" alt="Paypal payment method" class="h-6"/>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="absolute right-0 h-full bg-white w-full sm:w-96 shadow-lg overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-bold">Your Cart (3)</h3>
+                    <button id="closeCart" class="text-2xl">&times;</button>
+                </div>
+                
+                <!-- Cart Items -->
+                <div class="space-y-4 mb-6">
+                    <div class="flex border-b pb-4">
+                        <div class="w-20 h-20 mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06498c28-f19f-450c-8f53-4da7886e07dc.png" alt="Diamond eternity ring with princess cut stones" class="w-full h-full object-cover"/>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="font-medium">Eternity Diamond Ring</h4>
+                            <p class="text-sm text-gray-500">14K White Gold</p>
+                            <div class="flex justify-between mt-1">
+                                <span class="font-bold">$1,299.00</span>
+                                <div class="flex items-center border rounded">
+                                    <button class="px-2">-</button>
+                                    <span class="px-2 border-x">1</span>
+                                    <button class="px-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex border-b pb-4">
+                        <div class="w-20 h-20 mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/02cc7a5a-fa2f-4151-aff6-6d1268195b12.png" alt="Pearl pendant necklace with diamond accents" class="w-full h-full object-cover"/>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="font-medium">Pearl Pendant Necklace</h4>
+                            <p class="text-sm text-gray-500">18K Yellow Gold</p>
+                            <div class="flex justify-between mt-1">
+                                <span class="font-bold">$799.00</span>
+                                <div class="flex items-center border rounded">
+                                    <button class="px-2">-</button>
+                                    <span class="px-2 border-x">1</span>
+                                    <button class="px-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex border-b pb-4">
+                        <div class="w-20 h-20 mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0edaa6e4-9311-41d5-8926-70ee0c997e2f.png" alt="Diamond stud earrings in platinum setting" class="w-full h-full object-cover"/>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="font-medium">Diamond Stud Earrings</h4>
+                            <p class="text-sm text-gray-500">Platinum</p>
+                            <div class="flex justify-between mt-1">
+                                <span class="font-bold">$1,499.00</span>
+                                <div class="flex items-center border rounded">
+                                    <button class="px-2">-</button>
+                                    <span class="px-2 border-x">1</span>
+                                    <button class="px-2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t pt-4 mb-6">
+                    <div class="flex justify-between mb-2">
+                        <span>Subtotal</span>
+                        <span>$3,597.00</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <span>Shipping</span>
+                        <span>Calculated at checkout</span>
+                    </div>
+                    <div class="flex justify-between font-bold text-lg mt-4">
+                        <span>Total</span>
+                        <span>$3,597.00</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-2">
+                    <button class="w-full btn-gold py-3 rounded-md">Checkout</button>
+                    <button class="w-full border gold-border text-black py-3 rounded-md">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            document.querySelector('nav .md\\:hidden').classList.toggle('hidden');
+        });
+        
+        // Cart Toggle
+        document.querySelector('nav a[href="#"]:last-child').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('cartModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        document.getElementById('closeCart').addEventListener('click', function() {
+            document.getElementById('cartModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close cart when clicking outside
+        document.getElementById('cartModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Product Quick View
+        document.querySelectorAll('.product-card button:nth-child(2)').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Product quick view functionality would go here!');
+            });
+        });
+        
+        // Wishlist Toggle
+        document.querySelectorAll('.product-card button:nth-child(1)').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('text-red-500');
+            });
+        });
+    </script>
+</body>
+</html>
+```
